@@ -1,0 +1,252 @@
+
+ --------------------- 07-08-2024 06:15:52 ERROR: File not found TRACE [
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/controllers\/PartialController.php",
+        "line": 29,
+        "function": "setAsPartialViewFile",
+        "class": "app\\core\\src\\Controller",
+        "type": "->",
+        "args": []
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/core\/src\/Controller.php",
+        "line": 114,
+        "function": "farm",
+        "class": "app\\controllers\\PartialController",
+        "type": "->",
+        "args": [
+            {
+                "header": "\/Applications\/MAMP\/htdocs\/boar\/views\/partials\/header.tpl.php",
+                "appName": "boar",
+                "icon": "\/favicon.ico",
+                "stylesheets": [
+                    "<link rel=\"stylesheet\" href=\"\/resources\/css\/bootstrap.min.css\">",
+                    "<link rel=\"stylesheet\" href=\"\/resources\/css\/main.css\">",
+                    "<link rel=\"stylesheet\" href=\"https:\/\/cdn.jsdelivr.net\/npm\/bootstrap-icons@1.11.2\/font\/bootstrap-icons.min.css\">"
+                ],
+                "metaTags": [
+                    "<meta charset=\"utf-8\">",
+                    "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+                    "<meta http-equiv=\"Content-Language\" content=\"en\">",
+                    "<meta http-equiv=\"Content-Type\" content=\"text\/html; charset=utf-8\"\/>",
+                    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5\" \/>",
+                    "<meta name=\"description\" content=\"boar application\">",
+                    "<meta name=\"msapplication-tap-highlight\" content=\"no\">",
+                    "<meta name=\"theme-color\" content=\"#03045e\"\/>"
+                ],
+                "navbar": "\/Applications\/MAMP\/htdocs\/boar\/views\/partials\/navbar.tpl.php",
+                "navigationItems": [
+                    "<a class=\"dropdown-item\" href=\"\/user\/profile\">Profile<\/a>",
+                    "<a class=\"dropdown-item\" href=\"\/order\">Orders<\/a>",
+                    "<a class=\"dropdown-item\" href=\"\/product\">Products<\/a>",
+                    "<a class=\"dropdown-item\" href=\"\/auth\/logout\">Logout<\/a>"
+                ],
+                "footer": "\/Applications\/MAMP\/htdocs\/boar\/views\/partials\/footer.tpl.php",
+                "js": [
+                    "<script defer src=\"\/resources\/js\/jquery-3.7.0.min.js\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/bootstrap.bundle.min.js\"><\/script>",
+                    "<script defer type=\"module\" src=\"\/resources\/js\/main.js\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/modules\/constants.js?t=1\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/modules\/components.js?t=1\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/modules\/utilities.js?t=1\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/modules\/behaviour.js?t=1\"><\/script>"
+                ],
+                "nested": "\ud83c\udfe1 I'm a nested partial"
+            }
+        ]
+    },
+    {
+        "function": "app\\core\\src\\{closure}",
+        "class": "app\\core\\src\\Controller",
+        "type": "->",
+        "args": [
+            {
+                "nested": "\ud83c\udfe1 I'm a nested partial"
+            },
+            "Partial:farm"
+        ]
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/core\/src\/Controller.php",
+        "line": 107,
+        "function": "array_map",
+        "args": [
+            {},
+            {
+                "Partial:farm": {
+                    "nested": "\ud83c\udfe1 I'm a nested partial"
+                }
+            },
+            [
+                "Partial:farm"
+            ]
+        ]
+    },
+    {
+        "function": "app\\core\\src\\{closure}",
+        "class": "app\\core\\src\\Controller",
+        "type": "->",
+        "args": [
+            {
+                "Partial:farm": {
+                    "nested": "\ud83c\udfe1 I'm a nested partial"
+                }
+            },
+            "farm"
+        ]
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/core\/src\/Controller.php",
+        "line": 106,
+        "function": "array_map",
+        "args": [
+            {},
+            {
+                "farm": {
+                    "Partial:farm": {
+                        "nested": "\ud83c\udfe1 I'm a nested partial"
+                    }
+                },
+                "oink": {
+                    "Partial:oink": {
+                        "hello": "\ud83d\udc17 I'm a partial"
+                    }
+                }
+            },
+            [
+                "farm",
+                "oink"
+            ]
+        ]
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/controllers\/HomeController.php",
+        "line": 16,
+        "function": "upsertChildData",
+        "class": "app\\core\\src\\Controller",
+        "type": "->",
+        "args": [
+            {
+                "farm": {
+                    "Partial:farm": {
+                        "nested": "\ud83c\udfe1 I'm a nested partial"
+                    }
+                },
+                "oink": {
+                    "Partial:oink": {
+                        "hello": "\ud83d\udc17 I'm a partial"
+                    }
+                }
+            }
+        ]
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/core\/src\/http\/Router.php",
+        "line": 77,
+        "function": "index",
+        "class": "app\\controllers\\HomeController",
+        "type": "->",
+        "args": []
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/core\/src\/http\/Router.php",
+        "line": 103,
+        "function": "runController",
+        "class": "app\\core\\src\\http\\Router",
+        "type": "->",
+        "args": []
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/core\/Application.php",
+        "line": 115,
+        "function": "resolve",
+        "class": "app\\core\\src\\http\\Router",
+        "type": "->",
+        "args": []
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/public\/index.php",
+        "line": 8,
+        "function": "bootstrap",
+        "class": "app\\core\\Application",
+        "type": "->",
+        "args": []
+    }
+] --------------------- 
+
+ --------------------- 07-08-2024 06:23:01 ERROR: Failed opening required '' (include_path='.:/opt/homebrew/Cellar/php/8.3.7/share/php/pear') TRACE [
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/core\/src\/http\/Router.php",
+        "line": 82,
+        "function": "handleFrontendHydration",
+        "class": "app\\core\\src\\http\\Router",
+        "type": "->",
+        "args": [
+            {
+                "layout": "main",
+                "action": ""
+            },
+            {
+                "header": "\/Applications\/MAMP\/htdocs\/boar\/views\/partials\/header.tpl.php",
+                "appName": "boar",
+                "icon": "\/favicon.ico",
+                "stylesheets": [
+                    "<link rel=\"stylesheet\" href=\"\/resources\/css\/bootstrap.min.css\">",
+                    "<link rel=\"stylesheet\" href=\"\/resources\/css\/main.css\">",
+                    "<link rel=\"stylesheet\" href=\"https:\/\/cdn.jsdelivr.net\/npm\/bootstrap-icons@1.11.2\/font\/bootstrap-icons.min.css\">"
+                ],
+                "metaTags": [
+                    "<meta charset=\"utf-8\">",
+                    "<meta http-equiv=\"X-UA-Compatible\" content=\"IE=edge\">",
+                    "<meta http-equiv=\"Content-Language\" content=\"en\">",
+                    "<meta http-equiv=\"Content-Type\" content=\"text\/html; charset=utf-8\"\/>",
+                    "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5\" \/>",
+                    "<meta name=\"description\" content=\"boar application\">",
+                    "<meta name=\"msapplication-tap-highlight\" content=\"no\">",
+                    "<meta name=\"theme-color\" content=\"#03045e\"\/>"
+                ],
+                "navbar": "\/Applications\/MAMP\/htdocs\/boar\/views\/partials\/navbar.tpl.php",
+                "navigationItems": [
+                    "<a class=\"dropdown-item\" href=\"\/user\/profile\">Profile<\/a>",
+                    "<a class=\"dropdown-item\" href=\"\/order\">Orders<\/a>",
+                    "<a class=\"dropdown-item\" href=\"\/product\">Products<\/a>",
+                    "<a class=\"dropdown-item\" href=\"\/auth\/logout\">Logout<\/a>"
+                ],
+                "footer": "\/Applications\/MAMP\/htdocs\/boar\/views\/partials\/footer.tpl.php",
+                "js": [
+                    "<script defer src=\"\/resources\/js\/jquery-3.7.0.min.js\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/bootstrap.bundle.min.js\"><\/script>",
+                    "<script defer type=\"module\" src=\"\/resources\/js\/main.js\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/modules\/constants.js?t=1\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/modules\/components.js?t=1\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/modules\/utilities.js?t=1\"><\/script>",
+                    "<script defer src=\"\/resources\/js\/modules\/behaviour.js?t=1\"><\/script>"
+                ]
+            }
+        ]
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/core\/src\/http\/Router.php",
+        "line": 104,
+        "function": "hydrateDOM",
+        "class": "app\\core\\src\\http\\Router",
+        "type": "->",
+        "args": []
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/core\/Application.php",
+        "line": 115,
+        "function": "resolve",
+        "class": "app\\core\\src\\http\\Router",
+        "type": "->",
+        "args": []
+    },
+    {
+        "file": "\/Applications\/MAMP\/htdocs\/boar\/public\/index.php",
+        "line": 8,
+        "function": "bootstrap",
+        "class": "app\\core\\Application",
+        "type": "->",
+        "args": []
+    }
+] --------------------- 
